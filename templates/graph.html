@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+  {% block inner_head %}
+  <meta charset="utf-8">
+  <!-- goes in head -->
+  {% block preamble %}
+    <link rel="stylesheet" href={{cdn_css | safe}} type="text/css" />
+    <script type="text/javascript" src={{cdn_js | safe}}></script>
+  {% endblock %}
+  {% endblock %}
+</head>
+{% endblock %}
+{% block body %}
+<body>
+  {% block contents %}
+    {{script | safe}}
+    {{div | safe}}
+  {%endblock%}
+<br>
+  *note for AAPL one can see the stock split in 2014. This was a cute exercise!   
+</body>
+{%endblock%}
+</html>
