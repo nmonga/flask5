@@ -51,14 +51,14 @@ def plotmaker():
     p.y_range = Range1d(ymin-5,ymax+25)
     p.line(x, y1, color='blue', legend_label='Opening Price', alpha=0.8,
                muted_color='blue', muted_alpha=0.07)
-    p.line(x, y2, color='red', legend_label='Closing Price', alpha=0.8,
-               muted_color='red', muted_alpha=0.07)
+    p.line(x, y2, color='red', legend_label='Closing Price', alpha=0.06,
+               muted_color='red', muted_alpha=0.8)
     p.line(x, y3, color='green', legend_label='Adjusted Closing Price', alpha=0.8,
-               muted_color='green', muted_alpha=0.07)
+               muted_color='green', muted_alpha=0.075)
     p.line(x, y4, color='orange', legend_label='Lowest Daily Price', alpha=0.8,
-               muted_color='orange', muted_alpha=0.07)
-    p.line(x, y5, color='black', legend_label='Highest Daily Price', alpha=0.8,
-               muted_color='black', muted_alpha=0.07)
+               muted_color='orange', muted_alpha=0.06)
+    p.line(x, y5, color='black', legend_label='Highest Daily Price', alpha=0.06,
+               muted_color='black', muted_alpha=0.8)
     p.legend.location = "top_left"
     p.legend.click_policy="mute"
 
